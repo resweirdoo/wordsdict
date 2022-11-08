@@ -1,5 +1,5 @@
 global model_path
-model_path = "engwords.nlpdm"
+model_path = "engwords.wdpm"
 class NLP():
     def words(*args):
         words = open(model_path,"r+")
@@ -22,6 +22,7 @@ class load(NLP):
             model_path = path
         else:
             raise FileNotFoundError(f'File "{path}" is not exists')
+
 
 
 
